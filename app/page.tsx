@@ -1,10 +1,14 @@
-import { NavbarResize } from "@/components/navbar-resize";
+"use client";
 
+import { NavbarResize } from "@/components/navbar-resize";
+import { HeroMaskEffect } from "@/components/hero-mask-effect";
+import { FeaturesSection } from "@/components/features-section";
 export default function Home() {
   return (
     <div>
       <NavbarResize />
-      <h1>Hello World</h1>
+      <HeroMaskEffect />
+      <FeaturesSection />
     </div>
   );
 }
