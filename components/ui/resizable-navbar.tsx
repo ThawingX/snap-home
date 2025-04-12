@@ -8,7 +8,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 
 interface NavbarProps {
@@ -56,20 +56,47 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     offset: ["start start", "end start"],
   });
   const [visible, setVisible] = useState<boolean>(false);
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [mounted, setMounted] = useState(false);
+  const [currentScrollY, setCurrentScrollY] = useState(0);
+
+  // Fix hydration mismatch by only enabling animations after component mounts
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
+    // Set visibility based on scroll position
     if (latest > 100) {
       setVisible(true);
     } else {
       setVisible(false);
     }
+    
+    // Determine scroll direction
+    if (latest > lastScrollY + 10) {  // Added threshold to prevent flickering
+      setScrollDirection("down");
+    } else if (latest < lastScrollY - 10) {  // Added threshold to prevent flickering
+      setScrollDirection("up");
+    }
+    
+    setLastScrollY(latest);
+    setCurrentScrollY(latest);
   });
 
   return (
     <motion.div
       ref={ref}
-      // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("sticky inset-x-0 top-20 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 z-40 w-full", className)}
+      animate={mounted ? {
+        top: 0,
+        opacity: scrollDirection === "down" && currentScrollY > 100 && !visible ? 0 : 1,
+        position: "fixed"
+      } : {}}
+      transition={{
+        duration: 0.3,
+      }}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
