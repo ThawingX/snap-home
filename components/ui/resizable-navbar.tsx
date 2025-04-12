@@ -263,13 +263,13 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <Image
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-      <span className="font-medium text-black dark:text-white">Startup</span>
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="20" height="14" rx="3" stroke="currentColor" strokeWidth="2" />
+        <circle cx="12" cy="14" r="4" stroke="currentColor" strokeWidth="2" />
+        <path d="M7 6L9 2H15L17 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="7" cy="10" r="1" fill="currentColor" />
+      </svg>
+      <span className="font-medium text-black dark:text-white">SnapSnap</span>
     </Link>
   );
 };

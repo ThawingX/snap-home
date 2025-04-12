@@ -15,12 +15,16 @@ import { useState } from "react";
 export function NavbarResize() {
     const navItems = [
         {
+            name: "Home",
+            link: "#home",
+        },
+        {
             name: "Features",
             link: "#features",
         },
         {
-            name: "Pricing",
-            link: "#pricing",
+            name: "About",
+            link: "#about",
         },
         {
             name: "Contact",
@@ -39,7 +43,7 @@ export function NavbarResize() {
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-4">
                         <NavbarButton variant="secondary">Login</NavbarButton>
-                        <NavbarButton variant="primary">Book a call</NavbarButton>
+                        <NavbarButton variant="primary">Get Started</NavbarButton>
                     </div>
                 </NavBody>
 
@@ -70,7 +74,7 @@ export function NavbarResize() {
                         <div className="flex w-full flex-col gap-4">
                             <NavbarButton
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                variant="primary"
+                                variant="secondary"
                                 className="w-full"
                             >
                                 Login
@@ -80,7 +84,7 @@ export function NavbarResize() {
                                 variant="primary"
                                 className="w-full"
                             >
-                                Book a call
+                                Get Started
                             </NavbarButton>
                         </div>
                     </MobileNavMenu>
