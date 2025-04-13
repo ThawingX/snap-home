@@ -11,9 +11,9 @@ import ExpandableCardStandard from "./expandable-card-standard";
 export function FeaturesSection() {
   const features = [
     {
-      title: "Currently Available Products",
+      title: "Our Flagship Product",
       description:
-        "Browse our selection of currently available products designed to meet your needs.",
+        "Check out SnapSeeker, our competitive research tool designed to give you a market edge.",
       skeleton: <ExpandableCardStandard />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
