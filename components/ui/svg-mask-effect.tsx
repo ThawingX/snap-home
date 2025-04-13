@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const MaskContainer = ({
   children,
   revealText,
-  size = 10,
+  size = 20,
   revealSize = 600,
   className,
 }: {
@@ -60,6 +60,12 @@ export const MaskContainer = ({
       transition={{
         backgroundColor: { duration: 0.3 },
       }}
+      onMouseEnter={() => {
+        isMounted && setIsHovered(true);
+      }}
+      onMouseLeave={() => {
+        isMounted && setIsHovered(false);
+      }}
     >
       <motion.div
         className="absolute flex h-full w-full items-center justify-center bg-black text-6xl [mask-image:url(/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px] dark:bg-white"
@@ -82,12 +88,6 @@ export const MaskContainer = ({
       >
         <div className="absolute inset-0 z-0 h-full w-full bg-black opacity-50 dark:bg-white" />
         <div
-          onMouseEnter={() => {
-            isMounted && setIsHovered(true);
-          }}
-          onMouseLeave={() => {
-            isMounted && setIsHovered(false);
-          }}
           className="relative z-20 mx-auto max-w-4xl text-center text-4xl font-bold"
         >
           {children}
