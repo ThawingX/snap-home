@@ -19,10 +19,6 @@ export function NavbarResize() {
             link: "#home",
         },
         {
-            name: "Features",
-            link: "#features",
-        },
-        {
             name: "About",
             link: "#about",
         },

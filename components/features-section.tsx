@@ -182,7 +182,6 @@ export const SkeletonArticle = () => {
 
   return (
     <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
-      {/* TODO */}
       <div className="flex flex-row -ml-20">
         {imageLinks.map((item, idx) => (
           item.link && item.link !== "#" ? (
