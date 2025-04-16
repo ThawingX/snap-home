@@ -18,6 +18,16 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'sns-img-bd.xhscdn.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'snapsnap-1326850801.cos.ap-guangzhou.myqcloud.com',
+        pathname: '/**',
+      },
     ],
   },
   webpack(config) {
