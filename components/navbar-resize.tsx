@@ -35,11 +35,19 @@ export function NavbarResize() {
             <Navbar>
                 {/* Desktop Navigation */}
                 <NavBody>
-                    <NavbarLogo />
-                    <NavItems items={navItems} />
-                    <div className="flex items-center gap-4">
-                        <NavbarButton variant="secondary">Login</NavbarButton>
-                        <NavbarButton variant="primary">Get Started</NavbarButton>
+                    <div className="flex items-center">
+                        <NavbarLogo />
+                        <div className="ml-10 flex items-center space-x-6">
+                            {navItems.map((item, idx) => (
+                                <a 
+                                    key={`desktop-link-${idx}`}
+                                    href={item.link}
+                                    className="font-bold text-base text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] hover:text-gray-200 transition-colors z-[100]"
+                                >
+                                    {item.name}
+                                </a> 
+                            ))}
+                        </div>
                     </div>
                 </NavBody>
 
@@ -62,7 +70,7 @@ export function NavbarResize() {
                                 key={`mobile-link-${idx}`}
                                 href={item.link}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="relative text-neutral-600 dark:text-neutral-300"
+                                className="relative font-bold text-lg text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] px-4 py-2 w-full hover:text-gray-200 z-[100]"
                             >
                                 <span className="block">{item.name}</span>
                             </a>
