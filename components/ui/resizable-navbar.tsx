@@ -269,8 +269,8 @@ export const NavbarLogo = () => {
         <path d="M7 6L9 2H15L17 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         <circle cx="7" cy="10" r="1" fill="currentColor" />
       </svg> */}
-      <span className="text-2xl text-black dark:text-white" >panSpanS</span>
-      <span className="text-2xl text-black dark:text-black">SnapSnap</span>
+      <span className="text-2xl text-black dark:text-white" >SnapSnap</span>
+      {/* <span className="text-2xl text-black dark:text-black">SnapSnap</span> */}
     </Link>
   );
 };
