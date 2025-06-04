@@ -128,17 +128,17 @@ export const SkeletonArticle = () => {
     {
       image: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
-      alt: "小红书首页"
+      alt: "Xiaohongshu Homepage"
     },
     {
       image: "/images/snapsnap_articleA.jpg",
       link: "https://www.xiaohongshu.com/discovery/item/67f693cf000000000f03068d?source=webshare&xhsshare=pc_web&xsec_token=ABYrxiIHHYlH7fNxCTMHcTIk2Tw43y-TR1yj67nG9-G18=&xsec_source=pc_share",
-      alt: "产品经理的竞品调研痛点大揭秘"
+      alt: "Revealing the Pain Points of Product Managers in Competitive Research"
     },
     {
       image: "/images/articleA.jpg",
       link: "https://www.xiaohongshu.com/discovery/item/67f693cf000000000f03068d?source=webshare&xhsshare=pc_web&xsec_token=ABYrxiIHHYlH7fNxCTMHcTIk2Tw43y-TR1yj67nG9-G18=&xsec_source=pc_share",
-      alt: "你好，我是Dylan_Long"
+      alt: "Hello, I'm Dylan_Long"
     },
   ];
 

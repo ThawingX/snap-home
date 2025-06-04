@@ -31,7 +31,7 @@ export default function Contact() {
     e.preventDefault();
     setFormStatus("submitting");
     
-    // 模拟表单提交
+    // Simulate form submission
     setTimeout(() => {
       setFormStatus("success");
       setFormData({
@@ -49,17 +49,17 @@ export default function Contact() {
       <main className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="text-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight">联系我们</h1>
+            <h1 className="text-4xl font-bold tracking-tight">Contact Us</h1>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              有关于SnapSnap的问题？想了解更多关于我们如何帮助您进行产品验证的信息？我们的团队随时为您提供帮助。
+              Have questions about SnapSnap? Want to learn more about how we can help you with product validation? Our team is here to help.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
             <Card className="border-none shadow-md">
               <CardHeader>
-                <CardTitle className="text-2xl">联系方式</CardTitle>
-                <CardDescription>我们很乐意听取您的意见和问题</CardDescription>
+                <CardTitle className="text-2xl">Contact Information</CardTitle>
+                <CardDescription>We'd love to hear your feedback and questions</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -70,7 +70,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium">电子邮件</h3>
+                    <h3 className="font-medium">Email</h3>
                     <p className="text-muted-foreground">info@snapsnap.com</p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium">电话</h3>
+                    <h3 className="font-medium">Phone</h3>
                     <p className="text-muted-foreground">+1 (555) 123-4567</p>
                   </div>
                 </div>
@@ -95,13 +95,13 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium">地址</h3>
+                    <h3 className="font-medium">Address</h3>
                     <p className="text-muted-foreground">123 Innovation Drive, San Francisco, CA 94107</p>
                   </div>
                 </div>
                 
                 <div className="pt-4">
-                  <h3 className="font-medium mb-3">关注我们</h3>
+                  <h3 className="font-medium mb-3">Follow Us</h3>
                   <div className="flex space-x-4">
                     <a href="#" className="rounded-full bg-primary/10 p-2 hover:bg-primary/20 transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -134,64 +134,64 @@ export default function Contact() {
             
             <Card className="border-none shadow-md">
               <CardHeader>
-                <CardTitle className="text-2xl">发送消息</CardTitle>
-                <CardDescription>填写下面的表单，我们会尽快回复您</CardDescription>
+                <CardTitle className="text-2xl">Send a Message</CardTitle>
+                <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">姓名</Label>
+                    <Label htmlFor="name">Name</Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="请输入您的姓名"
+                      placeholder="Enter your name"
                       required
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="email">电子邮件</Label>
+                    <Label htmlFor="email">Email</Label>
                     <Input
                       type="email"
                       id="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="请输入您的电子邮件"
+                      placeholder="Enter your email"
                       required
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="subject">主题</Label>
+                    <Label htmlFor="subject">Subject</Label>
                     <Select name="subject" value={formData.subject} onValueChange={(value) => {
                       setFormData(prev => ({ ...prev, subject: value }));
                     }}>
                       <SelectTrigger className="w-full">
-                        <SelectValue placeholder="选择一个主题" />
+                        <SelectValue placeholder="Select a subject" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectGroup>
-                          <SelectItem value="一般咨询">一般咨询</SelectItem>
-                          <SelectItem value="产品演示">产品演示</SelectItem>
-                          <SelectItem value="合作机会">合作机会</SelectItem>
-                          <SelectItem value="技术支持">技术支持</SelectItem>
+                          <SelectItem value="General Inquiry">General Inquiry</SelectItem>
+                          <SelectItem value="Product Demo">Product Demo</SelectItem>
+                          <SelectItem value="Partnership Opportunity">Partnership Opportunity</SelectItem>
+                          <SelectItem value="Technical Support">Technical Support</SelectItem>
                         </SelectGroup>
                       </SelectContent>
                     </Select>
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="message">消息</Label>
+                    <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
                       name="message"
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="请输入您的消息"
+                      placeholder="Enter your message"
                       required
                     />
                   </div>
@@ -201,18 +201,18 @@ export default function Contact() {
                     disabled={formStatus === "submitting"}
                     className="w-full"
                   >
-                    {formStatus === "submitting" ? "发送中..." : "发送消息"}
+                    {formStatus === "submitting" ? "Sending..." : "Send Message"}
                   </Button>
                   
                   {formStatus === "success" && (
                     <div className="p-4 bg-green-100 text-green-700 rounded-md">
-                      您的消息已成功发送。我们会尽快回复您！
+                      Your message has been sent successfully. We'll get back to you soon!
                     </div>
                   )}
                   
                   {formStatus === "error" && (
                     <div className="p-4 bg-red-100 text-red-700 rounded-md">
-                      发送消息时出现错误。请稍后再试。
+                      An error occurred while sending your message. Please try again later.
                     </div>
                   )}
                 </form>

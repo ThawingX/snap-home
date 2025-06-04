@@ -1,6 +1,6 @@
 /**
- * JSON-LD结构化数据组件
- * 用于向搜索引擎提供结构化数据，提高SEO效果
+ * JSON-LD Structured Data Component
+ * Used to provide structured data to search engines, improving SEO effectiveness
  */
 
 import { type Language } from '@/lib/seo-config';
@@ -11,7 +11,7 @@ interface JsonLdProps {
 }
 
 export default function JsonLd({ type, data }: JsonLdProps) {
-  // 根据类型构建基础结构
+  // Build base structure according to type
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': type,
@@ -27,9 +27,9 @@ export default function JsonLd({ type, data }: JsonLdProps) {
 }
 
 /**
- * 生成组织结构化数据
- * @param lang 语言代码
- * @returns 组织结构化数据对象
+ * Generate organization structured data
+ * @param lang Language code
+ * @returns Organization structured data object
  */
 export function generateOrganizationData(lang: Language) {
   return {
@@ -38,7 +38,7 @@ export function generateOrganizationData(lang: Language) {
     logo: 'https://snapsnap.site/logo.png',
     description: lang === 'en'
       ? 'SnapSnap helps product managers validate concepts, perform competitive analysis, and gain SaaS insights to build better MVPs.'
-      : 'SnapSnap帮助产品经理验证概念、进行竞品分析并获取SaaS洞察，以构建更好的最小可行产品。',
+      : 'SnapSnap helps product managers validate concepts, perform competitive analysis, and gain SaaS insights to build better MVPs.',
     sameAs: [
       'https://twitter.com/snapsnap',
       'https://linkedin.com/company/snapsnap',
@@ -48,9 +48,9 @@ export function generateOrganizationData(lang: Language) {
 }
 
 /**
- * 生成网站结构化数据
- * @param lang 语言代码
- * @returns 网站结构化数据对象
+ * Generate website structured data
+ * @param lang Language code
+ * @returns Website structured data object
  */
 export function generateWebsiteData(lang: Language) {
   return {
@@ -58,7 +58,7 @@ export function generateWebsiteData(lang: Language) {
     url: 'https://snapsnap.site',
     description: lang === 'en'
       ? 'SnapSnap helps product managers validate concepts, perform competitive analysis, and gain SaaS insights to build better MVPs.'
-      : 'SnapSnap帮助产品经理验证概念、进行竞品分析并获取SaaS洞察，以构建更好的最小可行产品。',
+      : 'SnapSnap helps product managers validate concepts, perform competitive analysis, and gain SaaS insights to build better MVPs.',
     potentialAction: {
       '@type': 'SearchAction',
       'target': 'https://snapsnap.site/search?q={search_term_string}',
@@ -68,16 +68,16 @@ export function generateWebsiteData(lang: Language) {
 }
 
 /**
- * 生成产品结构化数据
- * @param lang 语言代码
- * @returns 产品结构化数据对象
+ * Generate product structured data
+ * @param lang Language code
+ * @returns Product structured data object
  */
 export function generateProductData(lang: Language) {
   return {
     name: 'SnapSeeker',
     description: lang === 'en'
       ? 'Competitive research tool designed to give you a market edge.'
-      : '竞品研究工具，旨在为您提供市场优势。',
+      : 'Competitive research tool designed to give you a market edge.',
     brand: {
       '@type': 'Brand',
       'name': 'SnapSnap',

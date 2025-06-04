@@ -1,0 +1,79 @@
+{
+  "common": {
+    "language": "English",
+    "switchToLanguage": "Switch to Chinese"
+  },
+  "home": {
+    "title": "SnapSnap - MVP Design & Competitive Analysis Tools",
+    "description": "SnapSnap helps product managers validate concepts, perform competitive analysis, and gain SaaS insights to build better MVPs.",
+    "features": {
+      "title": "Features",
+      "subtitle": "Powerful tools for product managers",
+      "item1": "Competitive Analysis",
+      "item2": "Market Research",
+      "item3": "MVP Validation",
+      "item4": "SaaS Insights"
+    }
+  },
+  "about": {
+    "title": "About SnapSnap - Our Mission & Story",
+    "description": "Learn about SnapSnap's mission to help product managers and entrepreneurs validate their concepts efficiently through competitive research and market analysis.",
+    "mission": {
+      "title": "Our Mission",
+      "paragraph1": "SnapSnap is dedicated to helping product managers and entrepreneurs efficiently validate their concepts. We understand the challenges of the product validation phase and provide tools to overcome common pitfalls.",
+      "paragraph2": "Our platform simplifies competitive research, market analysis, and user feedback collection, enabling teams to make data-driven decisions with confidence."
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "SnapSnap was founded in 2023, born from our founding team's frustration with existing product validation tools. After experiencing these challenges firsthand, we set out to build a solution that truly meets the needs of product teams.",
+      "paragraph2": "Today, SnapSnap helps thousands of teams validate their ideas faster and with more confidence, reducing the risk of building products that don't meet market needs."
+    },
+    "values": {
+      "title": "Our Values",
+      "value1": "Data-driven decision making in all aspects of product development",
+      "value2": "User-centered design that prioritizes real needs over assumptions",
+      "value3": "Continuous learning and adaptation based on market feedback",
+      "value4": "Transparency in our processes and communications"
+    },
+    "contactButton": "Contact Us"
+  },
+  "contact": {
+    "title": "Contact SnapSnap - Get in Touch With Our Team",
+    "description": "Have questions about SnapSnap? Contact our team for information about our MVP design and competitive analysis tools.",
+    "info": {
+      "title": "Contact Information",
+      "description": "Reach out to us through any of these channels",
+      "phone": {
+        "title": "Phone",
+        "value": "+1 (555) 123-4567"
+      },
+      "email": {
+        "title": "Email",
+        "value": "contact@snapsnap.com"
+      },
+      "address": {
+        "title": "Address",
+        "value": "123 Product Street, San Francisco, CA 94103"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "description": "Fill out the form below and we'll get back to you as soon as possible",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjectOptions": {
+        "general": "General Inquiry",
+        "support": "Technical Support",
+        "feedback": "Product Feedback",
+        "other": "Other"
+      },
+      "message": "Message",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "successMessage": "Your message has been sent successfully!",
+      "errorMessage": "An error occurred. Please try again."
+    }
+  }
+}

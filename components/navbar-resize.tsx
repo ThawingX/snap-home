@@ -11,6 +11,8 @@ import {
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 import LanguageSwitcher from "@/components/language-switcher";
 
 export function NavbarResize() {
@@ -40,13 +42,13 @@ export function NavbarResize() {
                         <NavbarLogo />
                         <div className="ml-10 flex items-center space-x-6">
                             {navItems.map((item, idx) => (
-                                <a 
+                                <Link 
                                     key={`desktop-link-${idx}`}
                                     href={item.link}
                                     className="font-bold text-base text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] hover:text-gray-200 transition-colors z-[100]"
                                 >
                                     {item.name}
-                                </a> 
+                                </Link> 
                             ))}
                         </div>
                         <LanguageSwitcher />
@@ -68,14 +70,14 @@ export function NavbarResize() {
                         onClose={() => setIsMobileMenuOpen(false)}
                     >
                         {navItems.map((item, idx) => (
-                            <a
+                            <Link
                                 key={`mobile-link-${idx}`}
                                 href={item.link}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="relative font-bold text-lg text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] px-4 py-2 w-full hover:text-gray-200 z-[100]"
                             >
                                 <span className="block">{item.name}</span>
-                            </a>
+                            </Link>
                         ))}
                         <div className="flex w-full flex-col gap-4">
                             <div className="flex justify-center my-2">

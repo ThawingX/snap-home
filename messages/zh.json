@@ -1,0 +1,79 @@
+{
+  "common": {
+    "language": "中文",
+    "switchToLanguage": "切换到英文"
+  },
+  "home": {
+    "title": "SnapSnap - MVP设计与竞品分析工具",
+    "description": "SnapSnap帮助产品经理验证概念、进行竞品分析并获取SaaS洞察，以构建更好的最小可行产品。",
+    "features": {
+      "title": "功能特点",
+      "subtitle": "为产品经理提供强大工具",
+      "item1": "竞品分析",
+      "item2": "市场研究",
+      "item3": "MVP验证",
+      "item4": "SaaS洞察"
+    }
+  },
+  "about": {
+    "title": "关于SnapSnap - 我们的使命与故事",
+    "description": "了解SnapSnap的使命，我们致力于通过竞争研究和市场分析帮助产品经理和企业家高效验证他们的概念。",
+    "mission": {
+      "title": "我们的使命",
+      "paragraph1": "SnapSnap致力于帮助产品经理和企业家高效验证他们的概念。我们了解产品验证阶段的挑战，并提供工具来克服常见的陷阱。",
+      "paragraph2": "我们的平台简化了竞争研究、市场分析和用户反馈收集，使团队能够自信地做出数据驱动的决策。"
+    },
+    "story": {
+      "title": "我们的故事",
+      "paragraph1": "SnapSnap成立于2023年，源于我们创始团队对现有产品验证工具的不满。在亲身经历这些挑战后，我们着手构建一个真正满足产品团队需求的解决方案。",
+      "paragraph2": "如今，SnapSnap帮助数千个团队更快、更自信地验证他们的想法，降低了构建不符合市场需求的产品的风险。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "value1": "在产品开发的各个方面进行数据驱动的决策",
+      "value2": "以用户为中心的设计，优先考虑真实需求而非假设",
+      "value3": "基于市场反馈持续学习和适应",
+      "value4": "在我们的流程和沟通中保持透明"
+    },
+    "contactButton": "联系我们"
+  },
+  "contact": {
+    "title": "联系SnapSnap - 与我们的团队取得联系",
+    "description": "对SnapSnap有疑问？联系我们的团队，了解有关我们的MVP设计和竞品分析工具的信息。",
+    "info": {
+      "title": "联系信息",
+      "description": "通过以下任何渠道联系我们",
+      "phone": {
+        "title": "电话",
+        "value": "+1 (555) 123-4567"
+      },
+      "email": {
+        "title": "邮箱",
+        "value": "contact@snapsnap.com"
+      },
+      "address": {
+        "title": "地址",
+        "value": "美国加利福尼亚州旧金山产品街123号，邮编94103"
+      }
+    },
+    "form": {
+      "title": "给我们发送消息",
+      "description": "填写下面的表单，我们会尽快回复您",
+      "name": "姓名",
+      "email": "邮箱",
+      "subject": "主题",
+      "subjectPlaceholder": "选择一个主题",
+      "subjectOptions": {
+        "general": "一般咨询",
+        "support": "技术支持",
+        "feedback": "产品反馈",
+        "other": "其他"
+      },
+      "message": "留言",
+      "submit": "提交",
+      "submitting": "提交中...",
+      "successMessage": "您的消息已成功发送！",
+      "errorMessage": "发生错误，请重试。"
+    }
+  }
+}

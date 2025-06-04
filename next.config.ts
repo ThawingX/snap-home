@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
+import withNextIntl from 'next-intl/plugin';
 
+// 基础Next.js配置
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -49,4 +51,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+// 使用next-intl插件包装配置
+export default withNextIntl('./i18n.js')(nextConfig);
