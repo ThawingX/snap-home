@@ -28,7 +28,15 @@ const nextConfig: NextConfig = {
         hostname: 'snapsnap-1326850801.cos.ap-guangzhou.myqcloud.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        pathname: '/**',
+      },
     ],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   webpack(config) {
     // Configure webpack to handle SVG files

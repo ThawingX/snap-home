@@ -243,7 +243,7 @@ export const SkeletonOther = () => {
   return (
     <div className="h-full flex flex-col items-center justify-center relative bg-transparent dark:bg-transparent">
       <Image
-        src="https://snapsnap-1326850801.cos.ap-guangzhou.myqcloud.com/wechat-miniprogram.png?q-sign-algorithm=sha1&q-ak=AKIDpZBK3lMJuYs-_GKsOf5DZKVMgRcnFEGbhYqjxwGW5rO988u894mmKhfUL6F82MTQ&q-sign-time=1744811985;1744815585&q-key-time=1744811985;1744815585&q-header-list=host&q-url-param-list=ci-process&q-signature=1a0f9e254c281815d012abb13b7e287cbeb9fd93&x-cos-security-token=IGj0HrWRZCw4ccm0IfwE18e3VnY6kQca93de56fc5ad213ff7dc6701500d61c92goBhqOIjgIQca3sToefz6Hjrv-GZ7jdO8hyT7TL3QwqhkwchMrsajYv-gr10gTXYOWVO25xDEM-a5Y4vb5KrRmp9D740us9kTF7ZZgrOKqee_iZEBzaByTXo1gKjRA50gyzIuXA3iiRxXlPBPSfxbzoK97U5UptZmcw6KFkFKrWhBLVoDc2fkFwK20lTclG4DFRIFilRC2EZM0gjkG01LuOLNu3KhowHS13mrj6aD9ZlLD9WzFxwWFduYCDxMOr6Mhc-rPVT3Bvcl6X6lkV4YA&ci-process=originImage"
+        src="https://placehold.co/300x300?text=WeChat+Mini+Program"
         alt="WeChat Mini Program QR Code"
         width={300}
         height={300}
