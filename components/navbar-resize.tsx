@@ -11,6 +11,7 @@ import {
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import LanguageSwitcher from "@/components/language-switcher";
 
 export function NavbarResize() {
     const navItems = [
@@ -35,7 +36,7 @@ export function NavbarResize() {
             <Navbar>
                 {/* Desktop Navigation */}
                 <NavBody>
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-between w-full">
                         <NavbarLogo />
                         <div className="ml-10 flex items-center space-x-6">
                             {navItems.map((item, idx) => (
@@ -48,6 +49,7 @@ export function NavbarResize() {
                                 </a> 
                             ))}
                         </div>
+                        <LanguageSwitcher />
                     </div>
                 </NavBody>
 
@@ -76,6 +78,9 @@ export function NavbarResize() {
                             </a>
                         ))}
                         <div className="flex w-full flex-col gap-4">
+                            <div className="flex justify-center my-2">
+                                <LanguageSwitcher />
+                            </div>
                             <NavbarButton
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 variant="secondary"
@@ -90,7 +95,7 @@ export function NavbarResize() {
                             >
                                 Get Started
                             </NavbarButton>
-                        </div>
+                    </div>
                     </MobileNavMenu>
                 </MobileNav>
             </Navbar>
